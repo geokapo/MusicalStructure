@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_f"
+    android:padding="12dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                style="@style/TextStyleMain"
+                android:layout_width="305dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="monospace"
+                android:text="@string/music_player"
+                android:textStyle="bold"
+                tools:textSize="30sp" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/houseMusic"
+                style="@style/TextStyleMain"
+                android:layout_gravity="center"
+                android:background="@color/house_music"
+                android:text="@string/house_music_category" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/electMusic"
+                style="@style/TextStyleMain"
+                android:layout_gravity="center"
+                android:background="@color/electornic_music"
+                android:text="@string/elect_music_category" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/popMusic"
+                style="@style/TextStyleMain"
+                android:layout_gravity="center"
+                android:background="@color/pop_music"
+                android:text="@string/pop_music_category" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
